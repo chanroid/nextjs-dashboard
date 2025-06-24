@@ -160,6 +160,7 @@ export async function fetchInvoiceById(id: string) {
       amount: invoice.amount / 100,
     }));
 
+    console.log("가져온 인보이스:", invoice);
     return invoice[0];
   } catch (error) {
     console.error("Database Error:", error);
